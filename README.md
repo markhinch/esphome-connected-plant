@@ -1,0 +1,1 @@
+# esphome-connected-plant
