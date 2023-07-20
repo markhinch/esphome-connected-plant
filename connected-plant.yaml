@@ -117,23 +117,24 @@ light:
             auto val = id(moisture_internal).state;
             id(moisture).publish_state(val);         // Publish the state every 1s to HA while the effect is playing
             if (val >= 0 && val < 10) {
-              it.all() = ESPColor(255, 255, 153);    // Dry yellow
+              it.all() = ESPColor(255, 0, 0);
             } else if (val >= 10 && val < 20) {
-              it.all() = ESPColor(255, 255, 102);    // Light yellow
+              it.all() = ESPColor(230, 25, 0);
             } else if (val >= 20 && val < 30) {
-              it.all() = ESPColor(255, 255, 0);      // Yellow
+              it.all() = ESPColor(204, 51, 0);
             } else if (val >= 30 && val < 40) {
-              it.all() = ESPColor(204, 255, 0);      // Lime green
+              it.all() = ESPColor(179, 77, 0);
             } else if (val >= 40 && val < 50) {
-              it.all() = ESPColor(102, 255, 0);      // Green
+              it.all() = ESPColor(153, 102, 0);
             } else if (val >= 50 && val < 60) {
-              it.all() = ESPColor(0, 204, 102);      // Light green
+              it.all() = ESPColor(128, 128, 0);
             } else if (val >= 60 && val < 70) {
-              it.all() = ESPColor(0, 153, 153);      // Cyan
+              it.all() = ESPColor(102, 153, 0);
             } else if (val >= 70 && val < 80) {
-              it.all() = ESPColor(0, 102, 204);      // Light blue
+              it.all() = ESPColor(77, 179, 0);
             } else if (val >= 80 && val < 90) {
-              it.all() = ESPColor(0, 51, 255);       // Blue
+              it.all() = ESPColor(51, 204, 0);
             } else if (val >= 90 && val <= 100) {
-              it.all() = ESPColor(0, 0, 204);        // Dark blue
+              it.all() = ESPColor(0, 255, 0);
             }
+
